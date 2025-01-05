@@ -7,7 +7,10 @@ public class Cuoco {
             pasta.Preparare();
             return pasta;
         } else if (richiesta.equals("mascarpone")||(richiesta.equals("torta di pinoli"))||(richiesta.equals("torta della nonna"))){
-            return new Dolce(richiesta);
+
+            Dolce dolce = new Dolce(richiesta);
+            dolce.Preparare();
+            return dolce;
         }
         return null;
     }

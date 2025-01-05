@@ -9,6 +9,7 @@ public class Pasta extends Piatto{
 
     @Override
     public void Preparare() {
-        System.out.println("Pasta con" + condimento + "preparata");
+        System.out.println("Pasta con" + condimento + " preparata");
+        System.out.println();
     }
 }

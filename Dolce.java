@@ -7,6 +7,7 @@ public class Dolce extends Piatto{
 
     @Override
     public void Preparare() {
-        System.out.println(tipo + "preparato");
+        System.out.println(tipo + " preparato");
+        System.out.println();
     }
 }

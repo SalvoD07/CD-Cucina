@@ -13,7 +13,7 @@ public class Secondo  extends Piatto{
 
     @Override
     public void Preparare() {
-        if (contorno == null) System.out.println(tipo + "preparato");
-        else System.out.println(tipo + "e" +contorno.getTipo()+ "preparato");
+        if (contorno == null) System.out.println(tipo + " preparato");
+        else System.out.println(tipo + " e " +contorno.getTipo()+ " preparato");
     }
 }
