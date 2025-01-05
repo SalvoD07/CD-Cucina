@@ -1,0 +1,47 @@
+@startuml
+left to right direction
+
+rectangle Menu {
+abstract class Piatto{
+    {abstract} +preparare():void
+}
+
+class Pasta {
+    -condimento:Sugo
+    +preparare():void
+}
+
+class Sugo {
+    -tipo:String
+    +preparare():void
+}
+
+class Secondo {
+    -tipo:String
+    +preparare():void
+}
+
+class Contorno {
+    -tipo:String
+    +preparare():void
+}
+
+class Dolce {
+    -tipo:String
+    +preparare():void
+}
+
+}
+class Cuoco{
+    +cucina():Piatto
+}
+
+Pasta "1" --> "0..1" Sugo
+Pasta <|-- Piatto
+Sugo <|-- Piatto
+Secondo <|-- Piatto
+Contorno <|-- Piatto
+Dolce <|-- Piatto
+Contorno <.. Secondo
+Piatto <- Cuoco
+@enduml
